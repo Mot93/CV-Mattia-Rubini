@@ -25,7 +25,16 @@
 \usepackage{multicol}										% columns env.
 	\setlength{\multicolsep}{0pt}
 \usepackage{paralist}										% compact lists
+\usepackage{hyperref}										% External Links
 \usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Links customization
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create column layout
@@ -91,91 +100,124 @@
 \end{figure}
 
 \begin{flushright}\small
-	Johnathan S. Doe \\
-	\url{jdoe@howtotex.com}  \\
-	\url{www.howtotex.com} \\
-	(555) 555-3333
+	Mattia Rubini \\
+	mattia.rubini@gmail.com \\
+	+39 329 617 1153 \\
+	\href{https://github.com/Mot93}{GitHub}\\
+	\href{https://gitlab.com/mattia.rubini}{GitLab}\\
+	\href{https://stackoverflow.com/users/6875945/mattia-rubini}{Stack Overflow}
 \end{flushright}\normalsize
 \framebreak
 
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} John Doe} \\
-\Large\bfseries  Graphics designer \\
+\Huge\bfseries {\color{RoyalBlue} Rubini Mattia} \\
+\Large\bfseries  Sviluppatore \\
 
 \normalsize\normalfont
 
 % About me
 \begin{AboutMe}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+	\\In tutto quello che faccio, cerco sempre di migliorarmi e di imparare cose nuove.
+	Tutti i miei progetti passati e questo curriculum sono frutto del mio lavoro in quanto autodidatta.
+	L'intero curriculum è stato fatto con \LaTeX, un linguaggio markup il cui scopo è fare documenti.
+	Il codice sorgente di questo curriculum si trova sul mio \href{https://github.com/Mot93}{account gitHub}.\\
+	Sono molto incline all'informatica, merito del liceo N. Copernico dove mi hanno insegnato a programmare già dall'età 14 anni.
 \end{AboutMe}
 
 % Experience
 \CVSection{Experience}
-\CVItem{May 2010 - present, Lorem ipsum}\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
+\CVItem{Nov 2016 - Feb 2017, Wordpress (sito personale)}\\
+	Imparato a fare siti con wordpress. 
+	Con queste nozioni ho fatto il mio sito personale. Il codice sorgente è disponibile su \href{https://github.com/Mot93/MattiaRubini-com-wordpress-theme}{github}.
 \SmallSep
 
-\CVItem{Aug 2007 - Feb 2010, Vivamus vel}\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus.
+\CVItem{Feb 2017 - Mag 2017, Postfix Calculator (app Android)}\\
+	Imparato a programmare app usando android studio, Java e XML. 
+	A seguire ho pubblicato una app android \href{https://play.google.com/store/apps/details?id=postfixcalculator.mattiarubini.com.postfixcalculator}{ Postifix Calculator}.
+	Il codice sorgente è pubblico su \href{https://gitlab.com/mattia.rubini/PostfixCalculator}{gitlab}
 \Sep
 
 % Education
 \CVSection{Education}
-\CVItem{2010 - present, Lorem ipsum dolor}\\
-MSc. Lorem ipsum, Cras sollicitudin
+\CVItem{2007 - 2013, Diploma}\\
+	Diplomato presso il liceo scientifico Niccolò Copernico di Bologna.\\
+	Indirizzo di Studi MAXI (Potenziamento del liceo scientifico).
+	Tale indirizzo insegna a programmare fin dai primi anni. 
 \SmallSep
 
-\CVItem{2007 - 2010, Lorem ipsum dolor}\\
-MSc. Lorem ipsum, Cras sollicitudin
+\CVItem{2013 - 2015, Studio ing. dell'Automazione}\\
+	Studio ing. dell'Automazione presso l'Alma Mater Studiorum di Bologna.\\
+	Vincitore della borsa di studio per studiare il secondo anno a Shanghai.\\
+	Studiato presso la Tongji di Shanghai durante l'anno scolastico set 2014 - lug 2015.
 \SmallSep
 
-\CVItem{2005 - 2007, Vivamus vel bibendum}\\
-Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
+\CVItem{2017 - presente, Studio ing. Informatica}\\
+	Nel 2015 ho deciso di cambiare facoltà, nel 2017 sono entrato al secondo anno di ing. Informatica, presso l'Alma Mater Studiorum di Bologna.
 \Sep
 
 % Skills
-\CVSection{Skills}
-\CVItem{Platforms}
+\CVSection{Competenze}
+\CVItem{Competenze informatiche avanzate}
 \begin{multicols}{3}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Lorem 
-	\item Ipsum 
+	\item Python 
+	\item Java
+	\item HTML
+	\item CSS
+	\item git
+	\item shell
+	\item bash
 \end{compactitem}
 \end{multicols}
 \SmallSep
 
-\CVItem{Computer software}
+\CVItem{Competenze informatiche}
 \begin{multicols}{3}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Lorem 
-	\item Ipsum 
-	\item Dolor 
-	\item Sit 
-	\item Amet
-	\item Consectetur 
-	\item Adipiscing 
-	\item Elit
-	\item \ldots
+	\item Database SQL
+	\item Wordpress
+	\item Django
+	\item PHP
+	\item \LaTeX
+	\item pascal
+	\item Windows
+	\item Linux
+	\item MacOS
+	\item Paradigma\\Funzionale
 \end{compactitem}
 \end{multicols}
-\Sep 
+\SmallSep
 
-\CVSection{Something other}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-
+% reset boundaries when going on a new page
 \clearpage
 \framebreak
 \framebreak
 
-\CVSection{Something else}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+\CVItem{Lingue conosciute}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Italiano\\(madrelingua)
+	\item Francese\\(madrelingua)
+	\item Inglese (avanzato)
+\end{compactitem}
+\end{multicols}
+\Sep 
+
+\CVSection{Note}
+	Non mi spavento facilmente davanti le avversità.
+	Per non fermarmi davanti il primo ostacolo, ho imparato l'inglese per accedere a più materiale possibile.
+	\\Inoltre, trovo sempre un modo per risolvere i problemi, il mio account di \href{https://stackoverflow.com/users/6875945/mattia-rubini}{Stack Overflow} ne è la prova.
+	\\Sempre grazie a \href{https://stackoverflow.com/users/6875945/mattia-rubini}{Stack Overflow} ho imparato ad essere chiaro e preciso nella esposizione e risoluzione dei problemi.
+
+\CVSection{Altro}
+	Membro del Rotaract Club dal set 2018.
 \Sep
 
 % References
-\CVSection{References}
-References upon request.
+%\CVSection{References}
+%References upon request.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
