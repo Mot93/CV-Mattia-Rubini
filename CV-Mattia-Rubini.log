@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  19 SEP 2018 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  21 SEP 2018 19:38
 entering extended mode
 **"i:/Users/Mattia/GoogleDrive/Documenti vari ed eventuali/CV LaTeX/CV-Mattia-R
 ubini.tex"
@@ -1084,11 +1084,11 @@ LaTeX Info: Redefining \nameref on input line 92.
 
 
 ABD: EveryShipout initializing macros
-<photo.pdf, id=6, 203.6671pt x 203.70303pt>
-File: photo.pdf Graphic file (type pdf)
-<use photo.pdf>
-Package pdftex.def Info: photo.pdf  used on input line 98.
-(pdftex.def)             Requested size: 64.87195pt x 64.88168pt.
+<photo-Mattia.jpg, id=6, 4625.28pt x 3468.96pt>
+File: photo-Mattia.jpg Graphic file (type jpg)
+<use photo-Mattia.jpg>
+Package pdftex.def Info: photo-Mattia.jpg  used on input line 98.
+(pdftex.def)             Requested size: 108.11882pt x 81.03888pt.
 
 Overfull \hbox (14.34578pt too wide) in paragraph at lines 104--104
  []\OT1/bch/m/n/10.95 mattia.rubini@gmail.com
@@ -1110,8 +1110,8 @@ LaTeX Font Info:    Font shape `OT1/bch/bx/n' in size <12> not available
 (Font)              Font shape `OT1/bch/b/n' tried instead on input line 118.
 [1
 
-{C:/Users/matti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./photo.pdf
->]
+{C:/Users/matti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./photo-Mat
+tia.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
@@ -1133,8 +1133,8 @@ Package rerunfilecheck Info: File `CV-Mattia-Rubini.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
- 20606 strings out of 492972
- 368693 string characters out of 3135883
+ 20608 strings out of 492972
+ 368712 string characters out of 3135883
  514752 words of memory out of 3000000
  24178 multiletter control sequences out of 15000+200000
  18850 words of font info for 38 fonts, out of 3000000 for 9000
@@ -1144,9 +1144,9 @@ Here is how much of TeX's memory you used:
 ata/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/matti/
 AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CV-Mattia-Rubini.pdf (2 pages, 1445790 bytes).
+Output written on CV-Mattia-Rubini.pdf (2 pages, 3564358 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

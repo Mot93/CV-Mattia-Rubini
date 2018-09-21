@@ -204,10 +204,11 @@ INPUT ./CV-Mattia-Rubini.out
 INPUT ./CV-Mattia-Rubini.out
 OUTPUT CV-Mattia-Rubini.out
 OUTPUT CV-Mattia-Rubini.pdf
-INPUT photo.pdf
-INPUT ./photo.pdf
-INPUT ./photo.pdf
-INPUT ./photo.pdf
+INPUT photo-Mattia.jpg
+INPUT ./photo-Mattia.jpg
+INPUT ./photo-Mattia.jpg
+INPUT ./photo-Mattia.jpg
+INPUT ./photo-Mattia.jpg
 INPUT C:/Users/matti/AppData/Roaming/MiKTeX/2.9/fonts/tfm/bitstrea/charter/bchr7t.tfm
 INPUT C:/Users/matti/AppData/Roaming/MiKTeX/2.9/fonts/tfm/bitstrea/charter/bchr7t.tfm
 INPUT C:/Users/matti/AppData/Roaming/MiKTeX/2.9/fonts/tfm/bitstrea/charter/bchb7t.tfm
