@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.17)  19 JAN 2021 13:08
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.17)  19 JAN 2021 14:56
  restricted system commands enabled.
 **CV-Mattia-Rubini.tex
 (./CV-Mattia-Rubini.tex
@@ -1245,12 +1245,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 188.
 
-Underfull \hbox (badness 1270) in paragraph at lines 188--188
-\TU/Carlito(0)/m/n/10 Questo cur-ricu-lum è stato re-al-iz-zato con L[]T[]X, un
- lin-guag-gio markup: il
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
@@ -1306,7 +1300,7 @@ Here is how much of LuaTeX's memory you used:
  503 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 66 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:2248,3:382,4:872,5:876,6:226,7:7186,8:29,9:768,10:23,11:414
+   avail lists: 2:2256,3:386,4:876,5:884,6:227,7:7216,8:27,9:768,10:23,11:417
  51145 multiletter control sequences out of 65536+200000
  65 fonts using 14190399 bytes
  122i,15n,117p,10611b,687s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1316,7 +1310,7 @@ fonts/truetype/public/simple-thesis-dissertation/carlito-regular.ttf><C:/Users/m
 atti/AppData/Local/Programs/MiKTeX/fonts/opentype/public/fontawesome/fontawesome
 .otf><C:/Users/matti/AppData/Local/Programs/MiKTeX/fonts/truetype/public/simple-
 thesis-dissertation/carlito-bold.ttf>
-Output written on CV-Mattia-Rubini.pdf (2 pages, 163798 bytes).
+Output written on CV-Mattia-Rubini.pdf (2 pages, 164114 bytes).
 
 PDF statistics: 65 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 131072)
