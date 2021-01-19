@@ -1,266 +1,287 @@
-%%% LaTeX Template: Designer's CV
-%%%
-%%% Source: http://www.howtotex.com/
-%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
-%%% Date: March 2012
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{Rubini-Mattia-resume}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Document properties and packages
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,12pt,final]{memoir}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% misc
-\renewcommand{\familydefault}{bch}	% font
-\pagestyle{empty}					% no pagenumbering
-\setlength{\parindent}{0pt}			% no paragraph indentation
-
-
-% required packages (add your own)
-\usepackage{flowfram}										% column layout
-\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
-\usepackage{graphicx}										% figures
-\usepackage{url}											% URLs
-\usepackage[usenames,dvipsnames]{xcolor}					% color
-\usepackage{multicol}										% columns env.
-	\setlength{\multicolsep}{0pt}
-\usepackage{paralist}										% compact lists
-\usepackage{hyperref}										% External Links
-\usepackage{tikz}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Links customization
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Create column layout
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% define length commands
-\setlength{\vcolumnsep}{\baselineskip}
-\setlength{\columnsep}{\vcolumnsep}
-
-% frame setup (flowfram package)
-% left frame
-\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
-	\newlength{\LeftMainSep}
-	\setlength{\LeftMainSep}{0.2\textwidth}
-	\addtolength{\LeftMainSep}{1\columnsep}
- 
-% small static frame for the vertical line
-\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
- 
-% content of the static frame
-\begin{staticcontents}{1}
-\hfill
-\tikz{%
-	\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0]
-	(0,0) -- (0,\textheight);}%
-\hfill\mbox{}
-\end{staticcontents}
- 
-% right frame
-\addtolength{\LeftMainSep}{1.5pt}
-\addtolength{\LeftMainSep}{1\columnsep}
-\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% define macros (for convience)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\Sep}{\vspace{1.5em}}
-\newcommand{\SmallSep}{\vspace{0.5em}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newenvironment{AboutMe}
-	{\ignorespaces\textbf{\color{RoyalBlue} About me}}
-	{\Sep\ignorespacesafterend}
-	
-\newcommand{\CVSection}[1]
-	{\Large\textbf{#1}\par
-	\SmallSep\normalsize\normalfont}
-
-\newcommand{\CVItem}[1]
-	{\textbf{\color{RoyalBlue} #1}}
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Begin document
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-% Left frame
-%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-	\hfill
-	\includegraphics[width=1\columnwidth, angle=0]{photo-Mattia}
-	\vspace{-7cm}
-\end{figure}
+\name{Mattia Rubini DevOPS}
+\tagline{Il bello dei computer è che fanno esattamente quello che gli dici di fare. 
+	\\Il brutto dei computer è che fanno esattamente quello che gli dici di fare.}
+\photo[round]{photo-Mattia.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
 
-\begin{flushright}\small
-	Mattia Rubini \\
-	mattia.rubini@gmail.com \\
-	+39 329 617 1153 \\
-	Account: 
-	\href{https://github.com/Mot93}{GitHub}\\
-	Account:
-	\href{https://gitlab.com/mattia.rubini}{GitLab}\\
-	Account:
-	\href{https://stackoverflow.com/users/6875945/mattia-rubini}{Stack Overflow}
-\end{flushright}\normalsize
-\framebreak
+\makeheader
 
+\highlightbar{
 
-% Right frame
-%%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} Rubini Mattia} \\
-\Large\bfseries  Developer - Laureando in Ing. Informatica \\
+    \section{Contatti}
+    
+    \email{mattia.rubini@gmail.com}
+    \phone{+39 329 617 1153}
+    \location{Via Lionello Spada 30/A, 40129 Bologna}
+    \vspace{0.5em}
+    \github{Mot93}{https://github.com/Mot93}
+    \linkedin{Mattia Rubini}{https://www.linkedin.com/in/mattia-rubini-1b8b49112/}
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{Python}{4}
+    \skill{Rust}{4}
+    \skill{SQL}{5}
+    \skill{Bash}{4}
+    \skill{C}{2}
+    \skill{Java}{1}
+    \skill{JavaScript}{3}
+    \skill{HTML/CSS}{3}
+    \skill{LaTeX}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Linux}{4}
+    \skill{MacOS}{4}
+    \skill{Windows}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Git}{3}
+    \skill{Jupyter}{4}
+    \skill{Ansible}{4}
+    \skill{Data handling/analysis}{4}
+    (e.g. numpy,  pandas, ...)\\
+    \skill{Docker}{5}
+    \skill{Office}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Frameworks}
+    \skill{Python Django}{4}
+    \skill{Rust Rocket}{2}
+    \skill{Dart Flutter}{2}
 
-\normalsize\normalfont
+    \vspace{0.5em}
+    \skillsection{Altre skills}
+    \skill{Ubiquiti}{4}
+    \skill{Raspberry Pi}{4}
+    \skill{Arduino}{1}
+    \skill{Assemblamento computer}{4}
+    \skill{KNX}{3}
+    \skill{BMS}{3}    
 
-% About me
-\CVSection{Presentazione}
-    Sono un laureando in Informatica all'università di Bologna, e mi dedico a progetti di programmazione dall'età di 14 anni.\\
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{Italian}{5}
+    \skill{English}{4}
+    \skill{French}{4}
+    \bigskip
+    
+    %\section{Certificates}
+    %\simpleskill{AWS certified cloud practitioner}
+
+}
+\mainbar{
+    \section{Presentazione}
+    	Sono un laureando in Informatica all'università di Bologna, e mi dedico a progetti di programmazione dall'età di 14 anni.\\
 	In tutto quello che faccio, cerco sempre di migliorarmi e di imparare cose nuove.
 	Tutti i progetti realizzati fino ad oggi sono frutto sia del mio lavoro da autodidatta che degli approfondimenti acquisiti nel corso dei miei studi di laurea.
 	\\Questo curriculum è stato realizzato con \LaTeX, un linguaggio markup:
 	il sorgente si trova presso il mio \href{https://github.com/Mot93/CV-Mattia-Rubini}{account gitHub}\\
-\Sep
-
-
-% Experience
-\CVSection{Esperienze}
-
-\CVItem{Giu 2019 - ad oggi, Impiegato persso MAIS Family Office}\\
-	Impiegato presso il MAIS family office ho incominciato il percorso di System Integrator. 
+    
+    \section[\faGears]{Esperienze Lavorative}
+    \job{Giu 2019 - Oggi}
+        {MAIS Family Office}
+        {System Integrator}
+        {Impiegato presso il MAIS family office ho incominciato il percorso di System Integrator. 
 	Finita la mia formazione, ho incominciato ad espandermi in altri ruoli. 
-	Mi sono appassionato della figura del Network Engineer, System Administrator e Data Scientist.
-	Aiutando i miei colleghi impiegati in questi settori, ho acquisito nuove conosceze e sono cresciuto anche nei loro ambiti.
+	Mi sono appassionato della figura del Network Engineer, System Administrator e Data Science.
+	Aiutando i miei colleghi impiegati in questi settori, ho acquisito nuove conosceze e sono cresciuto anche nei loro ambiti.}
+    
+    \section[\faMortarBoard]{Formazione}
+    \job{20020 - Oggi}
+        {Alma Mater Studiorum, Bologna}
+        {Laureando in Informatica}
+        {Corso di studi in scienze informatiche.}
+    \job{20017 - 2020}
+        {Alma Mater Studiorum, Bologna}
+        {Laureando in Ing. Informatica}
+        {Interrotto, per trasferimento ad Informatica. superati 10 esami.}
+    \job{20014 - 2015}
+        {Alma Mater Studiorum, Bologna}
+        {Borsa di studio a Shangai}
+        {Gemelaggio tra Ing. dell'Automazione di Bologna e Shangai}
+    \job{20013 - 2016}
+        {Alma Mater Studiorum, Bologna}
+        {Laureando in Ing. dell'automazione}
+        {Interrotto, per trasferimento ad Ingegneria Informatica. superati 15 esami.}
+    \job{2007 - 2013}
+        {Liceo Niccolò Copernico, Bologna}
+        {Diploma Liceo Scientifico}
+        {Indirizzo di studi MAXI (potenziamento di liceo scientifico, su materie: matematica, fisica, programmazione e scienze).
+	Tale indirizzo insegna a programmare fin dai primi anni.}
 
-\SmallSep
-
-\CVItem{Feb 2017 - Mag 2017, Postfix Calculator (app Android)}\\
-	Ho imparato a programmare app usando android studio, Java e XML. 
-	A seguire ho pubblicato una app android \href{https://play.google.com/store/apps/details?id=postfixcalculator.mattiarubini.com.postfixcalculator}{ Postifix Calculator}.
-	Il codice sorgente è pubblico su \href{https://gitlab.com/mattia.rubini/PostfixCalculator}{gitlab}
-\SmallSep
-
-\CVItem{Nov 2016 - Feb 2017, Wordpress (sito personale)}\\
-	Ho imparato a fare siti con wordpress. 
-	Con queste nozioni ho fatto il mio sito personale. Il codice sorgente è disponibile su \href{https://github.com/Mot93/MattiaRubini-com-wordpress-theme}{github}.
-\Sep
-
-% Education
-\CVSection{Formazione}
-
-\CVItem{2020 - ad oggi, Laureando in Informatica}\\
-	Nel 2020 ho deciso di cambiare nuovamente facoltà, per focalizzarmi sullo studio dell'informatica e di abbandonare la parte hardware che viene proposta ad ingegneria,
-	presso l'Alma Mater Studiorum di Bologna.
-\SmallSep
-
-\CVItem{2017 - 2020, Laureando in Ingegneria Informatica}\\
-	Nel 2017 ho deciso di cambiare facoltà, per focalizzarmi sullo studio dell'informatica, presso l'Alma Mater Studiorum di Bologna.
-\SmallSep
-
-\CVItem{2014 - 2015, Borsa di studio a Shanghai}\\
-	Vincitore della borsa di studio di Ingegneria per l'overseas di un anno a Shanghai, presso la Tongji University.
-\SmallSep
-
-\CVItem{2013 - 2016, Laureando in Ingegneria dell'Automazione}\\
-	% Bologna è a capo per non rompere il file
-	\textbf{Interrotto, per trasferimento ad Informatica.}\\
-	Iscritto presso il corso di laurea di Ingegneria dell'Automazione presso l'Alma Mater Studiorum di Bologna.
-	Superati 15 esami. 
-\SmallSep
-
-% reset boundaries when going on a new page
+    %\section{General Skills}
+    %\smallskip % additional skip because tag outlines use up space
+    %\tag{Tag 1}
+    %\tag{Tag 2}
+    %\tag{and}
+    %\tag{another tag}
+    %\tag{some more tags}
+    %\tag{yet another one}
+    %\tag{tags flow over}
+    %\tag{to the next line}
+    %\tag{if necessary}
+    
+    %\medskip
+    %Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+    
+    %\section{Wheel Chart}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    %\wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+    %    6/8em/accent!20/Sleep,          % comma-separated list of
+    %    8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+    %    2/8em/accent!80/Training,          % here, the color is shades of the accent color
+    %    3/8em/accent!60/Recovering from fighting criminals,
+    %    5/8em/accent/Being Batman
+    %}
+}
+\makebody
 \clearpage
-\framebreak
-\framebreak
 
-\CVItem{2007 - 2013, Diploma}\\
-	Diplomato presso il liceo scientifico Niccolò Copernico di Bologna.\\
-	Indirizzo di studi MAXI (potenziamento di liceo scientifico, su materie: matematica, fisica, programmazione e scienze).\\
-	Tale indirizzo insegna a programmare fin dai primi anni. 
-\Sep
 
-% Skills
-\CVSection{Competenze}
-\CVItem{Competenze informatiche avanzate}
-\begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Docker
-	\item Python 
-	\item HTML
-	\item CSS
-	\item Javascript
-	\item git
-	\item shell
-	\item bash
-	\item SQL
-	\item Rust
-	\item Apparecchiature \\ Ubiquity
-\end{compactitem}
-\end{multicols}
-\SmallSep
+%\pagestyle{highlightmain}
+%\highlightbar{}
+%\mainbar{
 
-\CVItem{Competenze informatiche}
-\begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Java
-	\item Ansible
-	\item Wordpress
-	\item Django
-	\item \LaTeX
-	\item Pascal
-	\item Windows
-	\item Linux
-	\item MacOS
-	\item Raspberry Py
-	\item Arduino
-	\item Assemblamento\\computer
-	\item Jupyter
-	\item BMS
-	\item KNX
-\end{compactitem}
-\end{multicols}
-\SmallSep
+    %\section{Another section}
+    
+    %This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
+    %The default page style is \texttt{headerhighlightmain} with all three elements.
+    %If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
+    %\medskip
+    %Neither main, nor highlight bar must be filled to make this template work.
+    %It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
 
-\CVItem{Lingue conosciute}
-\begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Italiano\\(madrelingua)
-	\item Francese\\(madrelingua)
-	\item Inglese (avanzato)
-\end{compactitem}
-\end{multicols}
-\Sep 
+    %\vspace{0.5em}
+    %\subsection{Subsection 1}
+    %Demonstrate subsections.
+    
+    %\subsection{Subsection 2}
+    %Subsection are also bold face but a smaller font then section. They also omit the rule.
+    
 
-\CVSection{Motivazione}
-	Non mi spavento facilmente davanti le avversità.
-	Per non fermarmi davanti il primo ostacolo, a 16 anni ho imparato l'inglese (livello avanzato) per accedere a più materiale possibile.
-	\\Questa mia indole, mista alla mia passione per l'infromatica, mi ha permesso conoscere ed approfondire numerosi strumenti 
-	grazie ai quali ho realizzato i numerosi progetti esposti sui miei account.
+%}
+%\makebody
 
-\CVSection{Altre esperienze}
-	Membro del Rotaract Club Bologna Valle del Savena.
-	\\System administrator del distretto Rotaract 2072.
-	\\Assemblo computer per uso personale, amici e familiari.
-	\\Ho progettato e realizzato la rete della mia abitazione, usando prodotti professionali Ubiquity.
-	\\Il mio interesse per Raspberry Pi e Arduino ha trovato applicazione sia nella supervisione degli apparati tecnologici del MAIS family office, sia per la mia bitazione.
-	\\Vacanza studio-lavoro di un mese con attività di volontariato per la ripopolazione della vegetazione in Islanda.
-	\\Vacanza studio-lavoro di un mese con attività di volontariato per la preparazione di una struttura dedicata a ragazzi disadattati in Inghilterra.
-	\\Attività di volontariato presso circolo Ancescao di Corticella in qualità di barista.
-	\\Lavoro estivo in qualità di magazziniere in struttura a temperatura controllata, per generi alimentari.
-\Sep
 
-% References
-%\CVSection{References}
-%References upon request.
+%\clearpage
+\pagestyle{empty}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End document
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Achievements, honours and awards}
+    \section{Achievements}
+    \achievement{Feb 2020 - Oggi\\
+        Ho progettato e implementato la mia infrastruttura informatica e domotica usando prodotti \href{https://www.ui.com/}{Ubiquiti}, \href{https://www.qnap.com}{QNap} (NAS), \href{https://www.raspberrypi.org/}{Raspberry Pi} (home server e cluster) e \href{https://www.ikea.com/it/it/p/tradfri-gateway-bianco-40337806/}{Ikea}.
+        La parte di networking, VPN, firewall, DNS e webserver sono pronte, sono ancora in cantiere la parte di automazione (\href{https://www.jenkins.io/}{Jenkins}), e la parte di microservizi (\href{https://kubernetes.io/}{Kubernetes}).
+        \\La parte di domonica è in continua espansione
+    }
+    \achievement{Feb 2017 - Mag 2017, Postfix Calculator (app Android)\\
+        Ho imparato a programmare app usando android studio, Java e XML. 
+        A seguire ho pubblicato una app android \href{https://play.google.com/store/apps/details?id=postfixcalculator.mattiarubini.com.postfixcalculator}{ Postifix Calculator}.
+        Il codice sorgente è pubblico su \href{https://gitlab.com/mattia.rubini/PostfixCalculator}{gitlab}
+    }
+    \achievement{Nov 2016 - Feb 2017, Wordpress (sito personale)\\
+        Ho imparato a fare siti con wordpress. 
+       Con queste nozioni ho fatto il mio sito personale. Il codice sorgente è disponibile su \href{https://github.com/Mot93/MattiaRubini-com-wordpress-theme}{github}.
+    }
+
+    \section{Motivazione}
+        Non mi spavento facilmente davanti le avversità.
+        Per non fermarmi davanti il primo ostacolo, a 16 anni ho imparato l'inglese (livello avanzato) per accedere a più materiale possibile.
+        \\Questa mia indole, mista alla mia passione per l'informatica, mi ha permesso conoscere ed approfondire numerosi strumenti 
+        grazie ai quali ho realizzato i numerosi progetti esposti sui miei account.
+
+    \section{Altre Esperienze}
+        Membro del \href{https://en.wikipedia.org/wiki/Rotaract}{Rotaract} Club Bologna Valle del Savena.
+        \\\textbf{System administrator del distretto \href{https://rotaract2072.com/}{Rotaract 2072}.}
+        \\Assemblo computer per uso personale, amici e familiari.
+        \\ \textbf{Il mio interesse per Raspberry Pi e Arduino ha trovato applicazione sia nella supervisione degli apparati tecnologici del MAIS family office, sia per la mia bitazione.}
+        \\Vacanza studio-lavoro di un mese con attività di volontariato per la ripopolazione della vegetazione in Islanda.
+        \\Vacanza studio-lavoro di un mese con attività di volontariato per la preparazione di una struttura dedicata a ragazzi disadattati in Inghilterra.
+        \\Attività di volontariato presso circolo Ancescao di Corticella in qualità di barista.
+        \\Lavoro estivo in qualità di magazziniere in struttura a temperatura controllata, per generi alimentari.
+
+%\section{Publications}
+%\pubforcefullwidth
+
+%Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+%Also show off the macros for publications that uses small icons for authors, date, journal and links.
+
+%Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list %to take up all the available space.
+%The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+%\bigskip
+
+%\publication
+%	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+%	{2020} % Year
+%	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+
+%\publication
+%	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
+%	{2020} % Year
+%	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
+
+%\publication
+%	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
+%	{2019} % Year
+%	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+
+\vspace*{\fill}
+\href{https://www.overleaf.com/latex/templates/my-resume/qxsxdtmknkfr}{my-resume di Nico Krieger}
+
 \end{document}
