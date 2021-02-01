@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.17)  19 JAN 2021 15:06
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.17)  1 FEB 2021 22:51
  restricted system commands enabled.
 **CV-Mattia-Rubini.tex
 (./CV-Mattia-Rubini.tex
@@ -1231,56 +1231,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--54
  []
 
 
-Overfull \hbox (9.50102pt too wide) in paragraph at lines 188--188
+Overfull \hbox (12.81706pt too wide) in paragraph at lines 203--203
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 188.
+(Font)              <7> on input line 203.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 188.
+(Font)              <5> on input line 203.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Overfull \hbox (60.46204pt too wide) in paragraph at lines 188--188
+Overfull \hbox (32.00928pt too wide) in paragraph at lines 203--203
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
@@ -1297,10 +1297,10 @@ Package rerunfilecheck Info: File `CV-Mattia-Rubini.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  32610 strings out of 478903
  100000,1373583 words of node,token memory allocated
- 503 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 66 glue_spec,
- 5 attribute_list, 2 write nodes
-   avail lists: 2:2256,3:386,4:876,5:884,6:227,7:7216,8:27,9:768,10:23,11:417
+ 513 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 66 glue_spec,
+ 6 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:2364,3:463,4:902,5:1122,6:253,7:8904,8:36,9:846,10:24,11:520
  51145 multiletter control sequences out of 65536+200000
  65 fonts using 14190399 bytes
  122i,15n,117p,10611b,687s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1310,9 +1310,9 @@ fonts/truetype/public/simple-thesis-dissertation/carlito-regular.ttf><C:/Users/m
 atti/AppData/Local/Programs/MiKTeX/fonts/opentype/public/fontawesome/fontawesome
 .otf><C:/Users/matti/AppData/Local/Programs/MiKTeX/fonts/truetype/public/simple-
 thesis-dissertation/carlito-bold.ttf>
-Output written on CV-Mattia-Rubini.pdf (2 pages, 164350 bytes).
+Output written on CV-Mattia-Rubini.pdf (2 pages, 164148 bytes).
 
-PDF statistics: 65 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 66 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
