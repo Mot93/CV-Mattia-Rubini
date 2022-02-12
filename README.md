@@ -12,7 +12,7 @@ lualatex CV-Mattia-Rubini.tex
 License
 -------
 
-MIT
+Pending
 
 Author Information
 ------------------
