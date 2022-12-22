@@ -7,7 +7,7 @@ I like the idea to have a link to a CV that is always updated, and to show my co
 
 ## How to compile using lualatex
 
-lualatex CV-Mattia-Rubini.tex
+    lualatex CV-Mattia-Rubini.tex
 
 License
 -------
